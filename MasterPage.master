@@ -1,0 +1,86 @@
+﻿
+
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+   <title>online movie ticket booking </title>
+  
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    <link href="StyleSheet2.css" rel="stylesheet" type="text/css" />
+    <link href="scrolling.css" rel="stylesheet" type="text/css" />
+    <style>
+        
+        .style7
+        {
+            width: 100%;
+            height: 30px;
+        }
+        .style8
+        {
+            height: 20px;
+        }
+
+    </style>
+    
+   
+    
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <table border="1" style=" height:700px; width:100%"> 
+    <tr>
+    
+    <td style="  border: solid 2px black ; text-align:center; background-color:inherit ; color:black";
+           class="style8">
+     <div style ="height :80px; background-image :url('image1/aishu2712/backhome.jpg');">   
+     
+          <h1 style="font-style: italic; font-weight: 900; color: #FF0000">WEL-COME IN CINEMA WORLD</h1>
+          </div> 
+    </td>
+    </tr>
+    <tr>
+    <td style="text-align:right;padding-right:20px; word-spacing:3em;
+          color:black; font-size: large; background-image: url('/website5/aishu2712/backhome.jpg');" 
+             class="style7" >
+ 
+    <a href="home.aspx" 
+            
+            style="font-style: italic; font-size: xx-large; color: #FF0000; font-weight: 900;">Home</a>
+
+    <a href="MOVIES.aspx"
+            style="font-style: italic; color: #FF0000; font-size: xx-large; font-weight: 900">Movies</a>
+    
+    <a href="Event.aspx"
+            style="font-weight: 900; font-style: italic; font-size: xx-large; color: #FF0000">Event</a>
+    
+    <a href="Plays.aspx"
+            style="font-weight: 900; font-size: xx-large; font-style: italic; color: #FF0000">Plays</a>
+             <a href="Sport.aspx"
+            style="font-weight: 900; font-size: xx-large; font-style: italic; color: #FF0000">Sport</a>
+             <a href="Booking.aspx"
+            style="font-weight: 900; font-size: xx-large; font-style: italic; color: #FF0000">Booking</a>
+  <a href="contact.aspx"
+            style="font-weight: 900; font-size: xx-large; font-style: italic; color: #FF0000">contact</a>
+   
+    </td>
+    </tr> 
+    <tr>
+    <td id="h1" style="vertical-align:top">
+   
+     <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </td>
+    </tr>
+     </table> 
+    </div>
+     </form> 
+    </body>
+</html>
